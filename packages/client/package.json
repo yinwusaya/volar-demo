@@ -1,0 +1,30 @@
+{
+  "name": "vscode-html1",
+  "displayName": "HTML1 Client",
+  "description": "A VS Code extension for HTML1.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "activationEvents": [
+    "onLanguage:html1"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "html1",
+        "extensions": [
+          ".html1"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "@types/vscode": "^1.92.0",
+    "@volar/language-server": "^2.4.0",
+    "@volar/vscode": "^2.4.0",
+    "server": "link:..\\server",
+    "vscode-languageclient": "^9.0.1"
+  }
+}
